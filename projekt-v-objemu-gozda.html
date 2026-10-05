@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Studio Nua - Domov</title>
+  <title>Studio Nua - V objemu gozda</title>
   <meta name="description" content="Studio Nua. Ambient, ki navdihuje. Krajinska arhitektura, interier in arhitektura.">
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,19 +12,18 @@
   <link rel="stylesheet" href="css/style.css">
   <script>try{if(sessionStorage.getItem('nuaIntro'))document.documentElement.className='no-intro';sessionStorage.setItem('nuaIntro','1');}catch(e){}</script>
 </head>
-<body data-title-key="nav.index">
-<div class="intro" aria-hidden="true"><div><img src="images/logo.png" alt=""><span>studio</span></div></div>
+<body data-title-key="t.gozd">
 <div class="wrap">
   <header class="site-header">
     <a class="logo" href="index.html"><img src="images/logo.png" alt="Nua"></a>
     <button class="hamburger" aria-label="Meni" aria-expanded="false"><i></i><i></i><i></i></button>
     <nav class="nav">
-      <a class="link active" href="index.html" data-i18n="nav.index">Domov</a>
+      <a class="link" href="index.html" data-i18n="nav.index">Domov</a>
       <div class="has-sub">
-        <a class="link" href="projekti.html" data-i18n="nav.projekti">Projekti</a>
+        <a class="link active" href="projekti.html" data-i18n="nav.projekti">Projekti</a>
         <div class="sub">
           <a class="link" href="krajinska-arhitektura.html" data-i18n="nav.krajinska-arhitektura">Krajinska arhitektura</a>
-          <a class="link" href="interier.html" data-i18n="nav.interier">Interier</a>
+          <a class="link active" href="interier.html" data-i18n="nav.interier">Interier</a>
           <a class="link" href="arhitektura.html" data-i18n="nav.arhitektura">Arhitektura</a>
           <a class="link" href="elaborati.html" data-i18n="nav.elaborati">Elaborati</a>
         </div>
@@ -36,51 +35,30 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <img class="slide on" src="images/hero.jpg" data-cap="cap.1" data-cat="0" alt="Ameriški slamnik in okrasne trave v obcestni zasaditvi v Ajdovščini">
-      <img class="slide" src="images/interier-2.jpg" data-cap="cap.2" data-cat="1" alt="Dnevni prostor z lesenim podom, kaminom in pogledom v gozd">
-      <img class="slide" src="images/arhitektura-1.jpg" data-cap="cap.3" data-cat="2" alt="Lesena hiša s temno streho na travnatem pobočju ob gozdu">
-      <div class="hero-text">
-        <h1 data-i18n="hero.motto">Ambient, ki navdihuje.</h1>
-        <p class="hero-tag"><a class="on" href="krajinska-arhitektura.html" data-i18n="cat.krajina">krajinska arhitektura</a><i>·</i><a href="interier.html" data-i18n="cat.interier">interier</a><i>·</i><a href="arhitektura.html" data-i18n="cat.arh">arhitektura</a></p>
+    <article class="pd">
+    <a class="more" href="interier.html" data-i18n="p.back">← Vsi projekti</a>
+    <header class="pd-head">
+      <a class="kicker" href="interier.html" data-i18n="cat.interier">interier</a>
+      <h1 data-i18n="t.gozd">V objemu gozda</h1>
+    </header>
+    <figure class="pd-hero"><img src="images/interier-2.jpg" alt="Dnevni prostor z lesenim podom, kaminom in pogledom v gozd"></figure>
+    <div class="pd-body">
+      <div class="pd-text">
+        <p class="pd-lead" data-i18n="s.gozd">Les, lan in ogenj. Velika okna pripeljejo gozd v prostor, temno pohištvo pa mu da mir.</p>
+        <!-- Daljši opis projekta: zamenjaj spodnji odstavek s svojim besedilom in odstrani data-i18n -->
+        <p class="ph-text" data-i18n="p.soon">Podrobnejši opis projekta sledi.</p>
       </div>
-      <div class="hero-cap">
-        <span class="hero-t" data-i18n="cap.1">Bolj zeleno mesto · Ajdovščina</span>
-        <span class="hero-ctrl">
-          <button type="button" class="hero-prev" aria-label="Prejšnja slika" data-i18n-label="hero.prev">&larr;</button>
-          <span class="hero-n">01 / 03</span>
-          <button type="button" class="hero-next" aria-label="Naslednja slika" data-i18n-label="hero.next">&rarr;</button>
-        </span>
-      </div>
-    </section>
-    <p class="lead" data-i18n="lead">Oblikujemo krajino, stavbe in interierje, ki rastejo iz kraja, kjer nastajajo.</p>
-    <section class="block">
-      <div class="block-head"><div class="section-label"><span data-i18n="team.label">kdo smo</span></div><h2 data-i18n="team.title">Pet ljudi, ena dolina</h2></div>
-      <div class="split">
-        <figure class="photo"><img src="images/ekipa.jpg" alt="Tina Lipovž in Veronika Žorž" loading="lazy"><figcaption data-i18n="team.cap">Tina Lipovž in Veronika Žorž</figcaption></figure>
-        <div>
-          <p class="quote" data-i18n="team.quote">Kot oblikovalkam ozelenitve in domačinkam nam je poseben užitek spremljati, kako zasaditev živi v objemu burje.</p>
-          <ul class="names">
-            <li>Tina Lipovž <small data-i18n="team.lead">vodja</small></li>
-            <li>Veronika Žorž</li>
-            <li>Rok Štefin</li>
-            <li>Aneja Fučka</li>
-            <li>Diana Kocjančič</li>
-          </ul>
-          <a class="btn" href="ekipa.html" data-i18n="team.btn">Spoznaj ekipo</a>
-        </div>
-      </div>
-    </section>
-    <section class="block">
-      <div class="block-head"><div class="section-label"><span data-i18n="ref.label">reference</span></div><h2 data-i18n="ref.title">Z nami so sadili</h2></div>
-      <div class="ref"><span class="year">2022–23</span><h3>Bolj zeleno mesto</h3><p data-i18n="ref.1">Trajnostna ozelenitev Ajdovščine: 1.200 dreves, 700 grmovnic in okoli 28.000 trajnic ob ulicah, šolah in igriščih. Projekt je z donacijo podprl Ivo Boscarol.</p></div>
-      <div class="ref ph"><span class="year" data-i18n="ref.year">leto</span><h3 data-i18n="ref.e.name">Naslednja referenca</h3><p data-i18n="ref.e.desc">Prostor za naročnika, kraj in kratek opis.</p></div>
-      <div class="ref ph"><span class="year" data-i18n="ref.year">leto</span><h3 data-i18n="ref.e.name">Naslednja referenca</h3><p data-i18n="ref.e.desc">Prostor za naročnika, kraj in kratek opis.</p></div>
-    </section>
-    <section class="block">
-      <div class="block-head"><div class="section-label"><span data-i18n="press.label">objave</span></div><h2 data-i18n="press.title">Pisali so o nas</h2></div>
-      <a class="press-row" href="https://outsider.si/studio-nua-prostor-ki-diha-z-burjo/" target="_blank" rel="noopener"><h3>Outsider</h3><p>Studio NUA: prostor, ki diha z burjo</p><span data-i18n="press.read">preberi →</span></a>
-    </section>
+      <dl class="data">
+          <div><dt data-i18n="l.interier">Interier</dt><dd>Tina Lipovž, Ana Glinšek</dd></div>
+          <div><dt data-i18n="l.kraj">Kraj</dt><dd>—</dd></div>
+          <div><dt data-i18n="l.leto">Leto</dt><dd>—</dd></div>
+        </dl>
+    </div>
+    <!-- Dodatne slike projekta: dodaj <figure><img src="images/ime.jpg" alt="opis"></figure> -->
+    <div class="pd-gallery">
+    </div>
+    <p class="pd-next"><a href="projekt-sportni-studio.html"><span data-i18n="p.next">Naslednji projekt →</span><b data-i18n="t.sport">Športni studio</b></a></p>
+    </article>
   </main>
   <p class="to-top"><a href="#" data-i18n="top">↑ Na vrh</a></p>
 </div>

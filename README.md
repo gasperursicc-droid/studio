@@ -11,4 +11,4 @@ Obrazec na `kontakt.html` pošilja prek storitve FormSubmit na info@studionua.si
 Ob prvem poslanem sporočilu FormSubmit pošlje na ta naslov aktivacijsko povezavo; obrazec deluje šele po potrditvi.
 
 ## Slike
-Slike v `images/` so izrezane iz posnetkov zaslona (nizka ločljivost). Zamenjaj jih z izvirniki pod istimi imeni.
+Večina slik v `images/` je izrezanih iz posnetkov zaslona (nizka ločljivost). Zamenjaj jih z izvirniki pod istimi imeni.

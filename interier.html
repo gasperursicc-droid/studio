@@ -4,45 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Studio Nua - Interier</title>
-  <meta name="description" content="Studio Nua: krajinska arhitektura, interier in arhitektura.">
+  <meta name="description" content="Studio Nua. Ambient, ki navdihuje. Krajinska arhitektura, interier in arhitektura.">
   <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>try{if(sessionStorage.getItem('nuaIntro'))document.documentElement.className='no-intro';sessionStorage.setItem('nuaIntro','1');}catch(e){}</script>
 </head>
-<body>
+<body data-title-key="nav.interier">
 <div class="wrap">
   <header class="site-header">
     <a class="logo" href="index.html"><img src="images/logo.png" alt="Nua"></a>
     <button class="hamburger" aria-label="Meni" aria-expanded="false"><i></i><i></i><i></i></button>
     <nav class="nav">
-      <a class="link" href="index.html">Domov</a>
-      <a class="link" href="krajinska-arhitektura.html">Krajinska arhitektura</a>
-      <a class="link active" href="interier.html">Interier</a>
-      <a class="link" href="arhitektura.html">Arhitektura</a>
-      <a class="link" href="elaborati.html">Elaborati</a>
-      <a class="link" href="o-nas.html">O nas</a>
-      <a class="link" href="kontakt.html">Kontakt</a>
-      <ul class="social">
-        <li><a href="https://www.facebook.com/profile.php?id=61581424351784" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 30 24"><path d="M16.21 20h-3.26v-8h-1.63V9.24h1.63V7.59c0-2.25 0.92-3.59 3.53-3.59h2.17v2.76H17.3c-1.02 0-1.08 0.39-1.08 1.11l0 1.38h2.46L18.38 12h-2.17V20z"/></svg></a></li>
-        <li><a href="https://www.instagram.com/_studionua_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 30 24"><rect x="8.2" y="5.2" width="13.6" height="13.6" rx="3.8" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="12" r="3.3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18.9" cy="8.1" r="1"/></svg></a></li>
-        <li><a href="mailto:info@studionua.si" aria-label="E-pošta"><svg viewBox="0 0 30 24"><path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1V8.8L15,14.8z"/></svg></a></li>
-      </ul>
+      <a class="link" href="index.html" data-i18n="nav.index">Domov</a>
+      <div class="has-sub">
+        <a class="link active" href="projekti.html" data-i18n="nav.projekti">Projekti</a>
+        <div class="sub">
+          <a class="link" href="krajinska-arhitektura.html" data-i18n="nav.krajinska-arhitektura">Krajinska arhitektura</a>
+          <a class="link active" href="interier.html" data-i18n="nav.interier">Interier</a>
+          <a class="link" href="arhitektura.html" data-i18n="nav.arhitektura">Arhitektura</a>
+          <a class="link" href="elaborati.html" data-i18n="nav.elaborati">Elaborati</a>
+        </div>
+      </div>
+      <a class="link" href="o-studiju.html" data-i18n="nav.o-studiju">O studiju</a>
+      <a class="link" href="ekipa.html" data-i18n="nav.ekipa">Ekipa</a>
+      <a class="link" href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a>
+      <div class="lang" role="group" aria-label="Jezik / Language"><button type="button" data-lang="sl" aria-pressed="true">SL</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button><button type="button" data-lang="it" aria-pressed="false">IT</button></div>
     </nav>
   </header>
   <main>
-    <div class="grid">
-      <figure><img src="images/interier-1.jpg" alt="Interier športnega studia s črnim stopniščem" loading="lazy"></figure>
+    <h1 class="page-title" data-i18n="nav.projekti">Projekti</h1>
+    <div class="filter"><a href="projekti.html" data-i18n="filter.all">Vsi</a><a href="krajinska-arhitektura.html" data-i18n="nav.krajinska-arhitektura">Krajinska arhitektura</a><a class="on" href="interier.html" data-i18n="nav.interier">Interier</a><a href="arhitektura.html" data-i18n="nav.arhitektura">Arhitektura</a><a href="elaborati.html" data-i18n="nav.elaborati">Elaborati</a></div>
+    <div class="proj-list">
+      <article class="proj">
+        <a class="proj-img" href="projekt-v-objemu-gozda.html"><img src="images/interier-2.jpg" alt="Dnevni prostor z lesenim podom, kaminom in pogledom v gozd" loading="lazy"></a>
+        <div>
+          <span class="kicker" data-i18n="k.living">bivalni prostor</span>
+          <h2><a href="projekt-v-objemu-gozda.html" data-i18n="t.gozd">V objemu gozda</a></h2>
+          <p data-i18n="s.gozd">Les, lan in ogenj. Velika okna pripeljejo gozd v prostor, temno pohištvo pa mu da mir.</p>
+          <dl class="data">
+          <div><dt data-i18n="l.interier">Interier</dt><dd>Tina Lipovž, Ana Glinšek</dd></div>
+          <div><dt data-i18n="l.kraj">Kraj</dt><dd>—</dd></div>
+          <div><dt data-i18n="l.leto">Leto</dt><dd>—</dd></div>
+        </dl>
+          <a class="more" href="projekt-v-objemu-gozda.html" data-i18n="p.view">Poglej projekt →</a>
+        </div>
+      </article>
+      <article class="proj">
+        <a class="proj-img" href="projekt-sportni-studio.html"><img src="images/interier-1.jpg" alt="Interier športnega studia s črnim stopniščem" loading="lazy"></a>
+        <div>
+          <span class="kicker" data-i18n="k.business">poslovni prostor</span>
+          <h2><a href="projekt-sportni-studio.html" data-i18n="t.sport">Športni studio</a></h2>
+          <p data-i18n="s.soon">Opis sledi.</p>
+          <dl class="data">
+          <div><dt data-i18n="l.kraj">Kraj</dt><dd>—</dd></div>
+          <div><dt data-i18n="l.leto">Leto</dt><dd>—</dd></div>
+        </dl>
+          <a class="more" href="projekt-sportni-studio.html" data-i18n="p.view">Poglej projekt →</a>
+        </div>
+      </article>
     </div>
   </main>
-  <p class="to-top"><a href="#">&uarr; Na vrh</a></p>
-  <footer class="site-footer">
+  <p class="to-top"><a href="#" data-i18n="top">↑ Na vrh</a></p>
+</div>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>Studio Nua</h2>
+      <p class="motto" data-i18n="hero.motto">Ambient, ki navdihuje.</p>
+    </div>
+    <div>
+      <h3 data-i18n="f.contact">Kontakt</h3>
+      <p>Studio Nua</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Studio+Nua%2C+Pre%C5%A1ernova+ulica+16%2C+5270+Ajdov%C5%A1%C4%8Dina" target="_blank" rel="noopener">Prešernova ulica 16<br>5270 Ajdovščina</a></p>
+      <p>Tina: <a class="mail" href="https://wa.me/38640752786" target="_blank" rel="noopener">040 752 786</a> <small class="wa">WhatsApp</small></p>
+      <p><a class="mail" href="mailto:info@studionua.si">info@studionua.si</a></p>
+    </div>
+    <div>
+      <h3 data-i18n="f.follow">Sledite nam</h3>
       <ul class="social">
         <li><a href="https://www.facebook.com/profile.php?id=61581424351784" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 30 24"><path d="M16.21 20h-3.26v-8h-1.63V9.24h1.63V7.59c0-2.25 0.92-3.59 3.53-3.59h2.17v2.76H17.3c-1.02 0-1.08 0.39-1.08 1.11l0 1.38h2.46L18.38 12h-2.17V20z"/></svg></a></li>
         <li><a href="https://www.instagram.com/_studionua_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 30 24"><rect x="8.2" y="5.2" width="13.6" height="13.6" rx="3.8" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="12" r="3.3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18.9" cy="8.1" r="1"/></svg></a></li>
         <li><a href="mailto:info@studionua.si" aria-label="E-pošta"><svg viewBox="0 0 30 24"><path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1V8.8L15,14.8z"/></svg></a></li>
       </ul>
-    <small>&copy; Studio Nua</small>
-  </footer>
-</div>
+    </div>
+    <div>
+      <h3 data-i18n="f.lang">Jezik</h3>
+      <div class="lang" role="group" aria-label="Jezik / Language"><button type="button" data-lang="sl" aria-pressed="true">SL</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button><button type="button" data-lang="it" aria-pressed="false">IT</button></div>
+    </div>
+  </div>
+  <div class="footer-bottom">Studio Nua &copy; 2026</div>
+</footer>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
